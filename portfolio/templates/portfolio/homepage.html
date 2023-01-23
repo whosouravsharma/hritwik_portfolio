@@ -1,0 +1,84 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="homepage-container-1">
+    <div class="homepage-item-1">
+        <img src="{% static 'portfolio/Subject.png' %}" 
+        class="homepage-picture" alt="" >
+    </div>
+    <div class="homepage-item-2">
+        <p class="display-3">Hi there!</p>
+        <p class="display-6" style="font-size: 25px;"">Fuelled by a passion for Machine Learning, 
+            I have a deep desire to excel and continuously improve in my work. 
+            Learn more about my journey below.</p>
+    </div>
+</div>
+
+<!-- career section -->
+<div id="career-section" class="homepage-container-2">
+    <div class="homepage-item-3">
+        <div class="row">
+            <p class="display-6 col" style="white-space: nowrap">My Career So Far</p> 
+            <a class="col" href="{% url 'career' %}" style="-bs-link-opacity: .5">Learn More</a>
+        </div>
+        
+        
+        <p class="display-6" style="font-size: 20px;">I have two years of experience in 
+            project management. I was selected through campus hiring after completing 
+            my Bachelor's degree. I led a team of engineers in developing and 
+            implementing advanced machine learning models for anomaly detection 
+            and classification purposes. My role included identifying and implementing 
+            new technologies to improve operational efficiency.</p>
+    </div>
+    <div class="homepage-item-4">
+        <button type="button" class="btn btn-outline-secondary">ML</button>
+        <button type="button" class="btn btn-outline-secondary">Computer Vision</button>
+        <button type="button" class="btn btn-outline-secondary">Neural Networks</button>
+        <button type="button" class="btn btn-outline-secondary">Pattern Recognition</button>
+        <button type="button" class="btn btn-outline-secondary">DSA</button>
+        <button type="button" class="btn btn-outline-secondary">Project Management</button>
+    </div>
+</div>
+<!-- Projects Section -->
+<div id="projects" class="hompage-container-3 row">
+    <div><p class="display-6">My projects </p></div>
+    <div class="card border-dark mb-3 col" style="width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Dark card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card border-dark mb-3 col" style="width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Dark card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div> 
+    <div class="card border-dark mb-3 col" style="width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Dark card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card border-dark mb-3 col" style="width: 18rem;">
+        <div class="card-header"><p class="h5">Header</p></div>
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card border-dark mb-3 col" style="width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Dark card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

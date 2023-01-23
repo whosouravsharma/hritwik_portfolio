@@ -1,0 +1,76 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block content %}
+<p class="h2">More about my Career . . .</p>
+<div class="career-container ">
+    
+    <br>
+    <!-- experience-1 -->
+    <div class="career-item-1">
+        <img src="{% static 'portfolio/Subject.png' %}" class="image-1" alt="" >
+    </div>
+    <div class="career-item-2">
+        <figure class="text-end">
+            <blockquote class="blockquote">
+              <p>Computer Vision Research Intern </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">Toshiba Global Commerce Solutions,</cite> Raleigh, North Carolina
+            </figcaption>
+          </figure>
+          <ul class="">
+            <li>Conducted a study on the impact of multimodal distribution of light on the performance of deep learning models and
+                shared the findings with the research and development community.</li>
+            <li>Conceptualized and deployed an automated image processing system with SIFT based feature detection and optical flow
+                techniques to fully automate the data labeling pipeline, resulting in a 90% reduction of manual work.</li>
+            <li>Developed a robust video processing pipeline and integrated a monitoring system for registering and highlighting
+                instances of changes in illumination using OpenCV, Python, and Docker to reduce data drift by 20%.</li>
+          </ul>
+    </div>
+
+    <!-- experience-2 -->
+    <div class="career-item-3">
+        <img src="{% static 'portfolio/Subject.png' %}" class="image-1" alt="" >
+    </div>
+    <div class="career-item-4">
+        <figure class="text-end">
+            <blockquote class="blockquote">
+              <p>Graduate Research Assistant</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">Eco PRT Lab,</cite> Raleigh, North Carolina
+            </figcaption>
+        </figure>
+        <ul class="">
+          <li>Implemented Mask R-CNN architecture and SORT algorithm for real-time tracking of vehicles, resulting in an efficient
+            traffic monitoring system with a significant 35% improvement in mean average precision.</li>
+          <li>Optimized and tested the performance of the neural network on KITTI dataset, through effective utilization of
+            hyperparameter tuning, achieving a 50% reduction in error.</li>
+        </ul>
+    </div>
+
+    <!-- experience-3 -->
+    <div class="career-item-5">
+        <img src="{% static 'portfolio/Subject.png' %}" class="image-1" alt="" >
+    </div>
+    <div class="career-item-6">
+        <figure class="text-end">
+            <blockquote class="blockquote">
+              <p>Assistant Manager</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">Vedanta Resources Limited,</cite> Korba, India
+            </figcaption>
+        </figure>
+        <ul class="">
+          <li>Spearheaded 7 projects in automation and energy optimization, collaborating with stakeholders and coordinating
+            cross-functional teams to deliver end-to-end solutions, generating in cost savings of $15000 year over year.</li>
+          <li>Executed accurate object detection and classification algorithms using Python for predictive maintenance of equipment in
+            a manufacturing plant. Successfully deployed the algorithms, resulting in a 2% increase in yearly equipment availability.</li>
+        </ul>
+    </div>
+</div>
+
+
+{% endblock %}
