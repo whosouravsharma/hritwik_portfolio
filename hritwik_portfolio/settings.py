@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5x-a&!30x+&_dn$ki#u0k#(ikg)gvje+l#em2=rm9g#mu@@=vm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['whosouravsharma.pythonanywhere.com']
 
@@ -127,3 +127,9 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+try: 
+    from .local_settings import *
+except:
+    print("Your are on production.")
